@@ -1,4 +1,5 @@
 .container{
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +37,7 @@ label{
     margin-bottom: 2px;
 }
 body{
+    background-color: rgba(2, 4, 8, 0.986);
     display: flex;
     justify-content: center;
     align-items: center;

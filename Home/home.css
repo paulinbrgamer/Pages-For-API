@@ -1,0 +1,54 @@
+.task{
+    background-color: rgb(250, 250, 248);
+    display: grid;
+    grid-template-columns: 7fr auto;
+    grid-template-rows: auto;
+    box-shadow: 1px 1px 6px 1px rgba(7, 7, 74, 0.562);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.complete{
+    margin-top: 17px;
+    background-color: rgba(28, 151, 28, 0.877);
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+
+}
+.todo{
+    margin-top: 17px;
+    background-color: red;
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(2, 4, 8, 0.986);
+}
+h1{
+    color: white;
+    padding: 50px;
+}
+#container-tasks{
+    width: 500px;
+    height: 500px;
+    border: none;
+    padding: 25px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    background-color: rgb(76, 85, 80);
+    
+}
+::-webkit-scrollbar{
+    width: 0;
+}
