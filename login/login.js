@@ -19,7 +19,7 @@ async function login(){
         }
         else{
             var a = document.createElement('a')
-            a.href = '/Home/home.html'
+            a.href = 'home.html'
             token = body.token
             localStorage.setItem('tk',token)
             a.click()
