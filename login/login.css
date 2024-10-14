@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    padding: 40px;
+}
+input{
+    
+    outline: none;
+    text-indent: 5px;
+    font-size: 14pt;
+    padding: 6px; 
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+input[type="button"]{
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: white;
+    margin-top: 30px;
+    background-color: rgb(5, 63, 255);
+    border: none;
+    padding: 10px;
+}
+input[type="button"]:hover{
+    opacity: 0.8;
+}
+h1{
+    margin: auto;
+}
+label{
+    margin-bottom: 2px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+}
