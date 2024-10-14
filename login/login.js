@@ -15,7 +15,7 @@ async function login(){
     if(res){
         var body = await res.json()
         if (body.erro){
-            console.log(body.erro)
+            window.alert(body.erro)
         }
         else{
             var a = document.createElement('a')
