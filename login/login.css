@@ -41,3 +41,7 @@ body{
     align-items: center;
     margin-top: -80px;
 }
+img{
+    margin: auto;
+    margin-bottom: 15px;
+}
