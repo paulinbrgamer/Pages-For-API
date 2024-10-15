@@ -52,3 +52,9 @@ h1{
 ::-webkit-scrollbar{
     width: 0;
 }
+#add-task{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 10px;
+}
