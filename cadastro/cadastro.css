@@ -28,9 +28,7 @@ input[type="button"]{
     border: none;
     padding: 10px;
 }
-input[type="button"]:hover{
-    opacity: 0.8;
-}
+
 h1{
     font-size: 14pt;
     margin: auto;
@@ -43,4 +41,5 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 97vh;
 }

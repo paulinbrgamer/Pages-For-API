@@ -38,3 +38,26 @@ async function newSession(){
         container.innerHTML= string
     }
 }
+async function addtask(){
+    var titu = document.getElementById('namet').value
+    var sub = document.getElementById('subtask').value
+    if (titu && sub){
+        var req = await fetch('https://api-to-do-a5kr.onrender.com/create-task',{
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({titulo:titu,subtitulo:sub,token:tk})
+        })
+        if(req.ok){
+            tasks.push()
+        }
+        else{
+            console.log(await req.json())
+        }
+    }
+    else{
+        window.alert("Não é permitido valores vazios")
+    }
+   
+}

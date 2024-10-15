@@ -4,6 +4,7 @@
     grid-template-columns: 7fr auto;
     grid-template-rows: auto;
     box-shadow: 1px 1px 6px 1px rgba(7, 7, 74, 0.562);
+    gap: 6px;
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 10px;
@@ -40,10 +41,10 @@ h1{
     padding: 50px;
 }
 #container-tasks{
-    width: 500px;
+    width: 400px;
     height: 500px;
     border: none;
-    padding: 25px;
+    padding: 15px;
     border-radius: 10px;
     overflow-y: scroll;
     background-color: rgb(76, 85, 80);
@@ -57,5 +58,5 @@ h1{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     margin-top: 10px;
-    width: 450px;
+    width: 380px;
 }
