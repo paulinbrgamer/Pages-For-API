@@ -41,19 +41,21 @@ async function newSession(){
 async function addtask(){
     var titu = document.getElementById('namet').value
     var sub = document.getElementById('subtask').value
+    var date = new Date()
+    var day = date.getDate()
+    var month = date.getMonth()+1
+    var years = date.getFullYear()
+    var strdate = day+"-"+month+"-"+years
     if (titu && sub){
         var req = await fetch('https://api-to-do-a5kr.onrender.com/create-task',{
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({titulo:titu,subtitulo:sub,token:tk})
+            body: JSON.stringify({titulo:titu,subtitulo:sub,token:tk,data_criacao:strdate,status:false})
         })
         if(req.ok){
-            tasks.push()
-        }
-        else{
-            console.log(await req.json())
+            newSession()
         }
     }
     else{
