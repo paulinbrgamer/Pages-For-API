@@ -1,4 +1,7 @@
 async function cadastrar(){
+    var img = document.getElementById('load')
+    img.classList.add('mostrar')
+    img.classList.remove('apagar')
     var name = document.getElementById('idnome').value
     var date = document.getElementById('iddate').value
     var mail = document.getElementById('idemail').value
@@ -11,9 +14,15 @@ async function cadastrar(){
         },
         body: JSON.stringify({nome:name,email:mail,data_nascimento:date,senha:password})
     })
-    if(requisicao){
+    img.classList.remove('mostrar')
+    img.classList.add('apagar')
+    if(requisicao.ok){
         var link = document.createElement('a')
         link.href = 'index.html'
         link.click()
+    }
+    else{
+        var b= await requisicao.json()
+        window.alert(b.erro)
     }
 }
