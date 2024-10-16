@@ -52,7 +52,7 @@ async function addtask(){
     var month = date.getMonth()+1
     var years = date.getFullYear()
     var strdate = day+"-"+month+"-"+years
-    if (titu && sub){
+    if (titu.value !='' || sub.value !==''){
         var req = await fetch('https://api-to-do-a5kr.onrender.com/create-task',{
             method:'POST',
             headers: {
