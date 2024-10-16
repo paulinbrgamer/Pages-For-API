@@ -23,7 +23,7 @@ async function newSession(){
                 string =  string+`
                 <div class="task" style="background-color: green;color:white;">
                 <h2 style="grid-column: 1/2;grid-row: 1/2;">${element.titulo}</h2>
-                <h4 style="grid-column: 1/2;margin-bottom: 10px;">${element.subtitulo}</h4>
+                <textarea name="sub" style="grid-column: 1/2;margin-bottom: 10px;">${element.subtitulo}</textarea>
                 <button  style="grid-column: 2/2;grid-row: 1/4;" class="complete">Completado</button>
                 <h5 style="grid-column: 1/2;color: white;">15/09/2022</h5>
                 </div>`
@@ -32,7 +32,7 @@ async function newSession(){
                 string =  string+`
                 <div class="task">
                 <h2 style="grid-column: 1/2;grid-row: 1/2;">${element.titulo}</h2>
-                <h4 style="grid-column: 1/2;margin-bottom: 10px;">${element.subtitulo}</h4>
+                 <textarea name="sub" style="grid-column: 1/2;margin-bottom: 10px;">${element.subtitulo}</textarea>
                 <button onclick="complete(${idx})" style="grid-column: 2/2;grid-row: 1/4;" class="todo">incompleto</button>
                 <h5 style="grid-column: 1/2;color: gray;">${element.data_criacao
                 }</h5>

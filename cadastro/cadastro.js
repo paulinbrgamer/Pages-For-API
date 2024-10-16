@@ -17,8 +17,10 @@ async function cadastrar(){
     img.classList.remove('mostrar')
     img.classList.add('apagar')
     if(requisicao.ok){
+        var tk = await requisicao.json()
+        localStorage.setItem('tk',tk.token)
         var link = document.createElement('a')
-        link.href = 'index.html'
+        link.href = 'home.html'
         link.click()
     }
     else{
