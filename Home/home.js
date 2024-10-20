@@ -8,7 +8,7 @@ var tasks = []
 newSession()
 async function newSession(){
     tasks = []
-    const user = await fetch(`https://api-to-do-a5kr.onrender.com/${tk}`,{
+    const user = await fetch(`https://api-to-do-production-253d.up.railway.app/${tk}`,{
         method: 'GET'
         
     })
@@ -53,7 +53,7 @@ async function addtask(){
     var years = date.getFullYear()
     var strdate = day+"-"+month+"-"+years
     if (titu.value !='' || sub.value !==''){
-        var req = await fetch('https://api-to-do-a5kr.onrender.com/create-task',{
+        var req = await fetch('https://api-to-do-production-253d.up.railway.app/create-task',{
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -71,7 +71,7 @@ async function addtask(){
    sub.value = ''
 }
 async function complete(idx){
-    let req = await fetch('https://api-to-do-a5kr.onrender.com/tasks/mudar-status',{
+    let req = await fetch('https://api-to-do-production-253d.up.railway.app/tasks/mudar-status',{
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',

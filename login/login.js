@@ -5,7 +5,7 @@ async function login(){
     img.classList.remove('apagar')
     var email = document.getElementById('idemail').value
     var pass = document.getElementById('ipword').value
-    var res = await fetch('https://api-to-do-a5kr.onrender.com/login',{
+    var res = await fetch('https://api-to-do-production-253d.up.railway.app/login',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json', // Define o tipo do conteúdo

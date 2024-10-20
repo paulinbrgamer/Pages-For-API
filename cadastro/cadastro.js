@@ -7,7 +7,7 @@ async function cadastrar(){
     var mail = document.getElementById('idemail').value
     var password = document.getElementById('ipword').value
     
-    var requisicao = await fetch('https://api-to-do-a5kr.onrender.com/register',{
+    var requisicao = await fetch('https://api-to-do-production-253d.up.railway.app/register',{
         method:'POST',
         headers: {
             'Content-Type': 'application/json', // Define o tipo do conteúdo
